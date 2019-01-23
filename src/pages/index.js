@@ -6,7 +6,6 @@ import Layout from '../components/layout'
 import Face from '../components/face'
 import SEO from '../components/seo'
 import SocialIcons from '../components/SocialIcons'
-import Project from '../components/project'
 
 const Container = styled.div`
   canvas {
