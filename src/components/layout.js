@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import './layout.css'
+import Header from './header'
 
 const Container = styled.div`
   display: flex;
@@ -25,6 +26,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <Container>
+        <Header />
         <div
           style={{
             margin: `0 auto`,

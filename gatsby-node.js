@@ -1,7 +1,33 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  let glslifyFiles = /\.(glsl|frag|vert|vs|fs)$/
 
-// You can delete this file if you're not using it
+  switch (stage) {
+    case 'develop':
+      config.loader('glslify', {
+        test: glslifyFiles,
+        loaders: ['raw', 'glslify'],
+      })
+
+      break
+
+    case 'build-css':
+      break
+
+    case 'build-html':
+      config.loader('glslify', {
+        test: glslifyFiles,
+        loaders: ['raw', 'glslify'],
+      })
+      break
+
+    case 'build-javascript':
+      config.loader('glslify', {
+        test: glslifyFiles,
+        loaders: ['raw', 'glslify'],
+      })
+
+      break
+  }
+
+  return config
+}

@@ -21,8 +21,8 @@ const Container = styled.div`
   }
   .face {
     animation: 18s ease 0s infinite spin;
-    max-width: 15rem;
-    max-height: 15rem;
+    max-width: 10rem;
+    max-height: 10rem;
     margin: 3rem auto;
   }
   @keyframes spin {
@@ -54,7 +54,7 @@ const IndexPage = () => (
         <p>
           Im Niki Esfandiari, a Software Engineer in the San Francisco Bay Area.{' '}
           <br />
-          Click around and please don't hesitate to reach out.
+          Click around or reach out below and say hi.
         </p>
         <SocialIcons />
       </div>
