@@ -52,8 +52,8 @@ const IndexPage = () => (
       <div className="splash-text">
         <h1>Hello!</h1>
         <p>
-          Im Niki Esfandiari, a Software Engineer in the San Francisco Bay Area.{' '}
-          <br />
+          I'm Niki Esfandiari, a Software Engineer in the San Francisco Bay
+          Area. <br />
           Click around or reach out below and say hi.
         </p>
         <SocialIcons />
