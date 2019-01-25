@@ -6,16 +6,16 @@ import Layout from '../components/layout'
 
 const Container = styled.div``
 
-class projects extends Component {
+class Writing extends Component {
   render() {
     return (
       <Layout>
         <Container>
-          <div>Project!</div>
+          <div>blog!</div>
         </Container>
       </Layout>
     )
   }
 }
 
-export default projects
+export default Writing

@@ -6,6 +6,7 @@ const Container = styled.div`
   position: absolute;
   width: 100vw;
   display: flex;
+  z-index: 3;
   a {
     color: white;
     text-decoration: none;
