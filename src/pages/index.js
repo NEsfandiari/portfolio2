@@ -25,6 +25,14 @@ const Container = styled.div`
     max-height: 10rem;
     margin: 3rem auto;
   }
+  .current {
+    text-decoration: underline;
+    color: white;
+    :hover {
+      color: lightgray;
+      transition: 0.2s;
+    }
+  }
   @keyframes spin {
     25% {
       transform: rotate3d(0.25, 0.25, 0.25);
@@ -54,7 +62,11 @@ const IndexPage = () => (
         <p>
           I'm Niki Esfandiari, a Software Engineer in the San Francisco Bay
           Area. <br />
-          Click around or reach out below and say hi.
+          Click around or reach out below and say hi. <br />
+          Currently I'm learning:{' '}
+          <Link to="/projects" className="current">
+            Three.js
+          </Link>
         </p>
         <SocialIcons />
       </div>

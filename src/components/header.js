@@ -25,9 +25,6 @@ const Header = () => (
     <h1>
       <Link to="/projects">Projects</Link>
     </h1>
-    <h1>
-      <Link to="/writing">Writing</Link>
-    </h1>
   </Container>
 )
 
