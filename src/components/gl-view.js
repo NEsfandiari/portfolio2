@@ -44,7 +44,7 @@ export default class GLView extends Component {
     const octo = new THREE.OctahedronGeometry(0.7, 3)
     const cylinder = new THREE.CylinderGeometry()
     const pyramid = new THREE.TetrahedronGeometry()
-    const donut = new THREE.TorusGeometry(1, 0, 50, 100)
+    const donut = new THREE.TorusGeometry(1, 0, 15, 25)
 
     const loader = new THREE.TextureLoader()
 
@@ -116,25 +116,64 @@ export default class GLView extends Component {
 
     this.groupmuse.rotation.x -= 0.01
     this.groupmuse.rotation.y -= 0.01
-    this.groupmuse.position.set(-4, 0, -2)
+    this.groupmuse.position.set(-5, 0, -2)
 
     this.cherries.rotation.x -= 0.01
     this.cherries.rotation.y -= 0.01
-    this.cherries.position.set(3, 0, -1)
+    this.cherries.position.set(4, 0, -1)
 
     this.memory.rotation.x += 0.01
     this.memory.rotation.y += 0.01
-    this.memory.position.set(0, 2.4, -1)
+    this.memory.position.set(0, 2.7, -1)
 
     this.warbler.rotation.x -= 0.01
     this.warbler.rotation.y -= 0.01
-    this.warbler.position.set(0, -3.5, -2.5)
+    this.warbler.position.set(0, -3.8, -2.5)
+    if (this.props.camera !== 'original') {
+      switch (this.props.camera) {
+        case 'lipslut':
+          this.camera.position.set(
+            this['lipslut'].position.x,
+            this['lipslut'].position.y,
+            this['lipslut'].position.z + 2
+          )
+          break
+        case 'groupmuse':
+          this.camera.position.set(
+            this['groupmuse'].position.x,
+            this['groupmuse'].position.y,
+            this['groupmuse'].position.z + 2.5
+          )
+          break
+        case 'cherries':
+          this.camera.position.set(
+            this['cherries'].position.x,
+            this['cherries'].position.y,
+            this['cherries'].position.z + 2
+          )
+          break
+        case 'warbler':
+          this.camera.position.set(
+            this['warbler'].position.x,
+            this['warbler'].position.y,
+            this['warbler'].position.z + 2.3
+          )
+          break
+        case 'memory':
+          this.camera.position.set(
+            this['memory'].position.x,
+            this['memory'].position.y,
+            this['memory'].position.z + 2
+          )
+          break
+      }
+    }
+    console.log(this.camera.position)
 
     this.renderer.render(this.scene, this.camera)
   }
 
   render() {
-    debugger
-    return <Container className="body" />
+    return <Container className="body" onClick={this.click} />
   }
 }

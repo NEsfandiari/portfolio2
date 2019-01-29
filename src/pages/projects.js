@@ -8,24 +8,46 @@ import Layout from '../components/layout'
 const Container = styled.div`
   ul {
     position: fixed;
+    z-index: 4;
     left: 0;
     margin-top: 10rem;
+    list-style-type: none;
+  }
+  h4 {
+    color: white;
+    cursor: pointer;
   }
 `
 
 class projects extends Component {
+  state = {
+    camera: 'original',
+  }
+  click = e => {
+    this.setState({ camera: e.target.className })
+  }
   render() {
     return (
       <Layout>
         <Container>
           <ul>
-            <li>Lipslut</li>
-            <li>Groupmuse</li>
-            <li>Cherries</li>
-            <li>Warbler</li>
-            <li>Memory Game</li>
+            <h4 className="lipslut" onClick={this.click}>
+              Lipslut
+            </h4>
+            <h4 className="groupmuse" onClick={this.click}>
+              Groupmuse
+            </h4>
+            <h4 className="cherries" onClick={this.click}>
+              Cherries
+            </h4>
+            <h4 className="warbler" onClick={this.click}>
+              Warbler
+            </h4>
+            <h4 className="memory" onClick={this.click}>
+              Memory Game
+            </h4>
           </ul>
-          <GLView />
+          <GLView camera={this.state.camera} />
         </Container>
       </Layout>
     )
