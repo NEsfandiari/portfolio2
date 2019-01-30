@@ -12,6 +12,9 @@ const Container = styled.div`
   background-color: #3080b5;
   height: 101vh;
   width: 102.5%;
+  * {
+    font-family: 'Ubuntu';
+  }
 `
 
 const Layout = ({ children }) => (
@@ -27,6 +30,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <Container>
+        <link
+          rel="stylesheet"
+          href="//brick.freetls.fastly.net/Ubuntu:300,400,500,700"
+        />
         <Header />
         <div
           style={{
