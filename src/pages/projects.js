@@ -50,6 +50,9 @@ const Container = styled.div`
 `
 
 class projects extends Component {
+  componentDidMount() {
+    AOS.init()
+  }
   state = {
     camera: 'original',
   }
@@ -57,9 +60,7 @@ class projects extends Component {
     this.setState({ camera: e.target.className })
   }
   render() {
-    AOS.init()
     const info = this.props[this.state.camera]
-    debugger
     return (
       <Layout>
         <Container>
@@ -117,14 +118,14 @@ projects.defaultProps = {
   lipslut: {
     link: 'https://lipslut-beta.netlify.com/',
     blurb:
-      'Birthed in the aftermath of the 2016 presidential election, Lipslut is a politcally charged cosmetics brand vowing for justice by donating 50% of profits to charity. I created the web app to replatorm them off of Squarespace.',
+      'Birthed in the aftermath of the 2016 presidential election, Lipslut is a politcally charged cosmetics brand vowing for justice by donating 50% of profits to charity. I created the web system to replatorm them off of Squarespace.',
     technologies:
       'React.js, AWS Lambda, Firebase, Contentful, Stripe, Shopify, GraphQL',
   },
   groupmuse: {
     link: 'https://itunes.apple.com/us/app/groupmuse/id942675649',
     blurb:
-      'An online social network that connects young classical musicians to local audiences through concert house parties. I worked on their IOS app.',
+      'An online social network that connects young classical musicians to local audiences through concert house parties. I worked on their IOS app (which is now released).',
     technologies: 'React-Native, Redux, Storybook, Stripe, Ruby',
   },
   cherries: {
@@ -137,7 +138,7 @@ projects.defaultProps = {
     link: 'https://warbler-project.herokuapp.com/',
     blurb:
       'A Twitter clone with a new face! Users can create profiles, add messages, and interact with other users.',
-    technologies: 'Python, Flask, jQuery, JWT',
+    technologies: 'Python, Flask, PostgreSQL, jQuery, JWT',
   },
   memory: {
     link: 'https://nikiesfandiari-memory-game.herokuapp.com/index.html',
