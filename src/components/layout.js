@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items: center;
   background-color: #3080b5;
   height: 101vh;
-  width: 102.5%;
+  width: 100vw;
   * {
     font-family: 'Ubuntu';
   }

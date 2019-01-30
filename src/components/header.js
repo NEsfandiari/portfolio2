@@ -7,9 +7,11 @@ const Container = styled.div`
   width: 100vw;
   display: flex;
   z-index: 3;
+  margin-left: 0.7rem;
   a {
     color: white;
     text-decoration: none;
+
     :hover {
       color: lightgray;
       transition: 0.2s;
