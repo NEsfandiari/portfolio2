@@ -125,12 +125,12 @@ projects.defaultProps = {
     link: 'https://warbler-project.herokuapp.com/',
     blurb:
       'A Twitter clone with a new face! Users can create profiles, add messages, and interact with other users.',
-    technologies: 'Flask, JQuery, JWT',
+    technologies: 'Python3, Flask, jQuery, JWT',
   },
   memory: {
     link: 'https://nikiesfandiari-memory-game.herokuapp.com/index.html',
     blurb:
       'A game where players click on cards to reveal images and match pairs as quickly as possible.',
-    technologies: 'JQuery',
+    technologies: 'jQuery',
   },
 }
