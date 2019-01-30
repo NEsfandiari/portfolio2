@@ -7,10 +7,13 @@ const Container = styled.div`
   width: 100vw;
   display: flex;
   z-index: 3;
-  margin-left: 1rem;
   a {
     color: white;
     text-decoration: none;
+    :hover {
+      color: lightgray;
+      transition: 0.2s;
+    }
   }
   h1 {
     font-size: 1.2rem;

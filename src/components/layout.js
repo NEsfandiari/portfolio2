@@ -10,7 +10,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #3080b5;
-  height: 100vh;
+  height: 101vh;
+  width: 102.5%;
 `
 
 const Layout = ({ children }) => (

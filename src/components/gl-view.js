@@ -7,6 +7,7 @@ const Container = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0.9;
 `
 
 export default class GLView extends Component {
