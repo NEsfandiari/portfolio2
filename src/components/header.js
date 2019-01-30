@@ -7,7 +7,7 @@ const Container = styled.div`
   width: 100vw;
   display: flex;
   z-index: 3;
-  margin-left: 0.7rem;
+  margin-left: 1.5rem;
   a {
     color: white;
     text-decoration: none;

@@ -10,8 +10,9 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #3080b5;
-  height: 101vh;
-  width: 100vw;
+  width: 100%;
+  height: 99vh;
+  max-width: 98vw;
   * {
     font-family: 'Ubuntu';
   }
