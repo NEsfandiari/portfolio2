@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FaGithub, FaAngellist, FaLinkedin, FaMailBulk } from 'react-icons/fa'
 
 const Container = styled.div`
+  max-width: 20rem;
   @media (max-width: 420px) {
     display: flex;
     justify-content: center;

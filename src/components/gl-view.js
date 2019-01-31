@@ -135,35 +135,35 @@ export default class GLView extends Component {
         case 'lipslut':
           this.camera.position.set(
             this['lipslut'].position.x,
-            this['lipslut'].position.y,
+            this['lipslut'].position.y + -0.15,
             this['lipslut'].position.z + 2
           )
           break
         case 'groupmuse':
           this.camera.position.set(
-            this['groupmuse'].position.x,
-            this['groupmuse'].position.y,
+            this['groupmuse'].position.x + 0.3,
+            this['groupmuse'].position.y + -0.15,
             this['groupmuse'].position.z + 2.5
           )
           break
         case 'cherries':
           this.camera.position.set(
-            this['cherries'].position.x,
-            this['cherries'].position.y,
+            this['cherries'].position.x + 0.3,
+            this['cherries'].position.y + -0.15,
             this['cherries'].position.z + 2
           )
           break
         case 'warbler':
           this.camera.position.set(
-            this['warbler'].position.x,
-            this['warbler'].position.y,
+            this['warbler'].position.x + 0.3,
+            this['warbler'].position.y + -0.15,
             this['warbler'].position.z + 2.3
           )
           break
         case 'memory':
           this.camera.position.set(
-            this['memory'].position.x,
-            this['memory'].position.y,
+            this['memory'].position.x + 0.1,
+            this['memory'].position.y + -0.15,
             this['memory'].position.z + 2
           )
           break
