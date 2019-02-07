@@ -148,7 +148,7 @@ export default class GLView extends Component {
           break
         case 'cherries':
           this.camera.position.set(
-            this['cherries'].position.x + 0.3,
+            this['cherries'].position.x + 0.1,
             this['cherries'].position.y + -0.15,
             this['cherries'].position.z + 2
           )
