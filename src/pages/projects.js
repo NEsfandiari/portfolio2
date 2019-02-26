@@ -47,6 +47,24 @@ const Container = styled.div`
       text-decoration: azure underline;
     }
   }
+  @media (max-width: 420px) {
+    .info {
+      right: 20%;
+      margin-top: 15rem;
+      text-shadow: 0px 0px 10px #000000;
+    }
+    ul {
+      margin-top: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      width: 20rem;
+      align-items: center;
+      justify-content: center;
+      h4 {
+        margin: 1rem;
+      }
+    }
+  }
 `
 
 class projects extends Component {
