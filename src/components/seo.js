@@ -9,7 +9,7 @@ function SEO({ description, lang, meta, keywords, title }) {
       query={detailsQuery}
       render={data => {
         const metaDescription =
-          description || data.site.siteMetadata.description
+          "I'm Niki Esfandiari, a Software Engineer in the San Francisco Bay Area."
         return (
           <Helmet
             htmlAttributes={{
@@ -23,7 +23,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:title`,
-                content: title,
+                content: 'Niki Esfandiari',
               },
               {
                 property: `og:description`,
