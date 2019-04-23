@@ -4,6 +4,9 @@ import { FaGithub, FaAngellist, FaLinkedin, FaMailBulk } from 'react-icons/fa'
 
 const Container = styled.div`
   max-width: 20rem;
+  svg {
+    max-width: 80px;
+  }
   @media (max-width: 420px) {
     display: flex;
     justify-content: center;
