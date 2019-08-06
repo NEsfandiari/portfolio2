@@ -35,6 +35,7 @@ const Layout = ({ children }) => (
           rel="stylesheet"
           href="//brick.freetls.fastly.net/Ubuntu:300,400,500,700"
         />
+        <meta name="p:domain_verify" content="03f306446d840ccd91a1fa78239d409c"/>
         <Header />
         <div
           style={{
