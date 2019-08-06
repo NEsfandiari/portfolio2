@@ -22,6 +22,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaDescription,
               },
               {
+                name: `p:domain_verify` ,
+                content: '03f306446d840ccd91a1fa78239d409c',
+              },
+              {
                 property: `og:title`,
                 content: 'Niki Esfandiari',
               },
